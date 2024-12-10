@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV['DB_DEV_USER_NAME'] %>
+  password: <%= ENV['DB_DEV_PASSWORD'] %>
+
+development:
+  <<: *default
+  database: marketplace_api_development
+  host: <%= ENV['DB_DEV_HOST'] %>
+  port: <%= ENV['DB_DEV_PORT'] %>
+
+test:
+  <<: *default
+  database: marketplace_api_test
+  host: <%= ENV['DB_DEV_HOST'] %>
+  port: <%= ENV['DB_DEV_PORT'] %>
+
+production:
+  <<: *default
+  database: marketplace_api_production
+  username: <%= ENV["MARKETPLACE_API_USER_NAME"] %>
+  password: <%= ENV["MARKETPLACE_API_DATABASE_PASSWORD"] %>
