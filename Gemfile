@@ -22,7 +22,7 @@ group :development, :test do
   gem "pry-rails", "~> 0.3.11"
   gem "rspec-rails", "~> 7.0.0"
   gem "rswag-specs"
-  gem "rubocop", "~> 1.68", require: false
+  gem "rubocop", "~> 1.69", require: false
   gem "rubocop-rails-omakase", require: false
 end
 
