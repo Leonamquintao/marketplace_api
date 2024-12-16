@@ -23,4 +23,5 @@ Things you may want to cover:
 
 * ...
 
-STOPPED ON:
+rails c
+FactoryBot.create(:user)

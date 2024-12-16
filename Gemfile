@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 
 gem "bootsnap", require: false
+gem "devise", "~> 4.9", ">= 4.9.4"
 gem "dotenv-rails", "~> 3.1", ">= 3.1.4"
 gem "pg", "~> 1.1"
 gem "puma", ">= 5.0"
@@ -26,5 +27,6 @@ group :development, :test do
 end
 
 group :test do
+  gem "shoulda-matchers", "~> 6.0"
   gem "simplecov", "~> 0.22.0", require: false
 end

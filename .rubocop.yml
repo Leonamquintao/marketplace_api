@@ -3,3 +3,7 @@ Style/StringLiterals:
   EnforcedStyle: double_quotes
 Style/Documentation:
   Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Lint/ShadowingOuterLocalVariable:
+  Enabled: false
