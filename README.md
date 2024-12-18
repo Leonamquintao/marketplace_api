@@ -23,5 +23,16 @@ Things you may want to cover:
 
 * ...
 
-rails c
-FactoryBot.create(:user)
+
+### Hints
+
+Using rails console to create an user with `FactoryBot`:
+
+> rails c > FactoryBot.create(:user)
+
+Using other files on `rails_helpers.rb`
+
+```
+1 | rails_support_path = Rails.root.join("spec", "support", "**", "*.rb")
+2 | DIR[rails_support_path].each { |file| require file }
+```
