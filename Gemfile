@@ -20,7 +20,7 @@ group :development, :test do
   gem "factory_bot_rails", "~> 6.4", ">= 6.4.4"
   gem "ffaker"
   gem "pry-rails", "~> 0.3.11"
-  gem "rspec-rails", "~> 7.0.0"
+  gem "rspec-rails", "~> 7.1.0"
   gem "rswag-specs"
   gem "rubocop", "~> 1.68", require: false
   gem "rubocop-rails-omakase", require: false
