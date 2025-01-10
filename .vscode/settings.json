@@ -5,6 +5,7 @@
 		"javascripts",
 		"railtie",
 		"Rswag",
+		"Rubocop",
 		"shoulda"
 	]
 }

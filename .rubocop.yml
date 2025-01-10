@@ -5,5 +5,11 @@ Style/Documentation:
   Enabled: false
 Metrics/MethodLength:
   Enabled: false
+Metrics/BlockLength:
+  Enabled: false
 Lint/ShadowingOuterLocalVariable:
   Enabled: false
+AllCops:
+  Exclude:
+    - "config/initializers/devise.rb"
+    - "bin/bundle"
