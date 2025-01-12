@@ -2,6 +2,7 @@
 
 require "spec_helper"
 require "ffaker"
+require "devise"
 
 ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
@@ -32,6 +33,8 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
 
   config.filter_rails_from_backtrace!
+
+  config.include Devise::Test::IntegrationHelpers, type: :request
 
   # if you want to use shoulda matchers as a support folder
   # you can create a file named spec/support/shoulda_matchers.rb
